@@ -28,6 +28,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
     defaultValues: { name: "", password: "", email: "" },
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     try {
       if (type === "sign-up") {
